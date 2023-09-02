@@ -9,7 +9,7 @@ export class AppComponent {
 	title = 'angular-learnjs';
 
 	onKeyDown(event: Event) {
-		console.log('onKeyDown', (event as any)['key']);
+		console.log('onKeyDown', event);
 	}
 
 	onAppHeaderClick() {
