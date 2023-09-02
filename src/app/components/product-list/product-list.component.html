@@ -1,0 +1,12 @@
+<div class="container">
+  <h2 class="title">Products</h2>
+  <div
+    *ngFor="let product of products"
+    class="product-list-container"
+  >
+    <app-product-card
+      [product]="product"
+      (click)="onProductCardClick(product)"
+    ></app-product-card>
+  </div>
+</div>

@@ -4,10 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderModule } from './components/header/header.module';
+import { ProductListComponent } from './components/product-list/product-list.component';
+import { ProductCardComponent } from './components/product-list/product-card/product-card.component';
+import { ProductListModule } from './modules/product-list-module/product-list.module';
 
 @NgModule({
 	declarations: [AppComponent],
-	imports: [BrowserModule, BrowserAnimationsModule, HeaderModule],
+	imports: [BrowserModule, BrowserAnimationsModule, HeaderModule, ProductListModule],
 	providers: [],
 	bootstrap: [AppComponent],
 })
