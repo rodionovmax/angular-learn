@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { applicationConfigMock } from './shared/application-config/application-config.mock';
 
 @Component({
 	selector: 'app-root',
@@ -7,6 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 	title = 'angular-learnjs';
+	readonly applicationConfig = applicationConfigMock;
+	isDrawerOpened = false;
 
 	onKeyDown(event: Event) {
 		console.log('onKeyDown', event);
@@ -14,5 +17,9 @@ export class AppComponent {
 
 	onAppHeaderClick() {
 		console.log('onHeaderClick');
+	}
+
+	onMenuClick() {
+		this.isDrawerOpened = !this.isDrawerOpened;
 	}
 }

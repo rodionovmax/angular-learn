@@ -1,5 +1,11 @@
 <app-header
   (click)="onAppHeaderClick()"
+  [applicationConfig]="applicationConfig"
+  (menuClick)="onMenuClick()"
 ></app-header>
 <!--<input (keydown.enter)="onKeyDown($event)">-->
-<app-product-list></app-product-list>
+<!--<app-product-list></app-product-list>-->
+<app-sidenav
+  [isDrawerOpened]="isDrawerOpened"
+  (isDrawerOpenedChange)="isDrawerOpened = $event"
+></app-sidenav>

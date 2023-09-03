@@ -1,21 +1,21 @@
 <mat-toolbar color="primary">
-    <button 
-        mat-icon-button 
-        class="example-icon" 
+    <button
+        mat-icon-button
+        class="example-icon"
         aria-label="Example icon-button with menu icon"
-        (click)="onMenuClick()"
+        (click)="menuClick.emit(applicationConfig.title)"
     >
     <mat-icon>menu</mat-icon>
     </button>
-    <img [src]="imgSrc" class="shop-icon" alt="shop icon image">
-    <span>My App</span>
+    <img [src]="applicationConfig.shopIconSrc" class="shop-icon" alt="shop icon image">
+    <span>{{ applicationConfig.title }}</span>
     <span class="example-spacer"></span>
     <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
     <mat-icon>favorite</mat-icon>
     </button>
-    <button 
-        mat-icon-button 
-        class="example-icon" 
+    <button
+        mat-icon-button
+        class="example-icon"
         aria-label="Example icon-button with share icon"
         (click)="onShareClick($event)"
     >
