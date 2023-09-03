@@ -1,11 +1,24 @@
-<app-header
+<!--<app-header
   (click)="onAppHeaderClick()"
   [applicationConfig]="applicationConfig"
   (menuClick)="onMenuClick()"
+></app-header>-->
+<app-header
+  (click)="onAppHeaderClick()"
+  [applicationConfig]="applicationConfig"
+  (menuClick)="sidenav.toggleDrawer()"
 ></app-header>
 <!--<input (keydown.enter)="onKeyDown($event)">-->
 <!--<app-product-list></app-product-list>-->
-<app-sidenav
+
+<!--<app-sidenav
   [isDrawerOpened]="isDrawerOpened"
   (isDrawerOpenedChange)="isDrawerOpened = $event"
-></app-sidenav>
+></app-sidenav>-->
+
+<!-- 2-way binding -->
+<!--<app-sidenav
+  #sidenav
+  [(isDrawerOpened)]="isDrawerOpened"
+></app-sidenav>-->
+<app-sidenav #sidenav></app-sidenav>

@@ -9,7 +9,7 @@ import { applicationConfigMock } from './shared/application-config/application-c
 export class AppComponent {
 	title = 'angular-learnjs';
 	readonly applicationConfig = applicationConfigMock;
-	isDrawerOpened = false;
+	// isDrawerOpened = false;
 
 	onKeyDown(event: Event) {
 		console.log('onKeyDown', event);
@@ -19,7 +19,7 @@ export class AppComponent {
 		console.log('onHeaderClick');
 	}
 
-	onMenuClick() {
-		this.isDrawerOpened = !this.isDrawerOpened;
-	}
+	// onMenuClick() {
+	// 	this.isDrawerOpened = !this.isDrawerOpened;
+	// }
 }
