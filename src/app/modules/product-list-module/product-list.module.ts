@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ProductListComponent } from '../../components/product-list/product-list.component';
-import { ProductCardComponent } from '../../components/product-list/product-card/product-card.component';
+import { ProductListComponent } from './product-list.component';
+import { ProductCardComponent } from './product-card/product-card.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 
